@@ -11,9 +11,14 @@ print()
 x3 = x2[:2,:2].copy()
 print(x3)
 print()
-x4 = np.array([ x3[:,0] , x3[:,1] ])  # [ gets the values of all rows , gets the values of all columns]
-print(x4)
+x4 = np.array([ x3[:,0] , x3[:,1] ])  #[ gets the values of all rows , gets the values of all columns]
+print( "transposed ", x4)
 print()
 
 x5 = x3.copy().transpose()
 print(x5)
+
+
+
+print(x2.reshape(2,3))
+
